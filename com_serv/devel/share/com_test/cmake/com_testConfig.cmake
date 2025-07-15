@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(com_test_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT " " STREQUAL " ")
+if(NOT "/home/wang/ros_study/com_serv/devel/include " STREQUAL " ")
   set(com_test_INCLUDE_DIRS "")
-  set(_include_dirs "")
+  set(_include_dirs "/home/wang/ros_study/com_serv/devel/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -156,7 +156,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/wang/ros_study/com_serv/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/wang/ros_study/com_serv/devel/lib;/home/wang/ros_study/com_serv/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -179,7 +179,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(com_test_EXPORTED_TARGETS "")
+set(com_test_EXPORTED_TARGETS "com_test_generate_messages_cpp;com_test_generate_messages_eus;com_test_generate_messages_lisp;com_test_generate_messages_nodejs;com_test_generate_messages_py")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${com_test_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -187,7 +187,7 @@ foreach(t ${com_test_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "")
+set(depends "roscpp;rospy;std_msgs;message_runtime")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls
@@ -216,7 +216,7 @@ foreach(depend ${depends})
   _list_append_deduplicate(com_test_EXPORTED_TARGETS ${${com_test_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "")
+set(pkg_cfg_extras "com_test-msg-extras.cmake")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${com_test_DIR}/${extra})

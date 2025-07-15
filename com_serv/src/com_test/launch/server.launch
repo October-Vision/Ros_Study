@@ -1,0 +1,14 @@
+<launch>
+    <!-- 定义可动态替换的参数 -->
+    <arg name="num1" default="15" />
+    <arg name="num2" default="30" />
+    <!-- 启动服务端节点 -->
+    <node name="sum_server" pkg="com_test" type="srv_server" output="screen" />
+    
+    <!-- 启动客户端节点，并通过param传递参数 -->
+    <node name="sum_client" pkg="com_test" type="srv_client" output="screen">
+        <!--使用<param>标签传递参数给节点 $(arg 参数名)引用上面定义的参数-->
+        <param name="num1" value="$(arg num1)" />
+        <param name="num2" value="$(arg num2)" />
+    </node>
+</launch>

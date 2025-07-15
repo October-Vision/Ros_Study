@@ -1,0 +1,33 @@
+<launch>
+   <!-- c++ 发布者节点 -->
+    <node 
+        pkg="com_test" 
+        type="pub_test" 
+        name="pub" 
+        output="screen"
+        launch-prefix="gnome-terminal -- bash -c 'rosrun com_test pub_test; exec bash'"
+    />
+
+    <node 
+        pkg="com_test" 
+        type="sev_test" 
+        name="sev" 
+        output="screen"
+        launch-prefix="gnome-terminal -- bash -c 'rosrun com_test sev_test; exec bash'"
+    />  
+    <!-- Python 发布者节点 -->
+    <node 
+        pkg="com_test" 
+        type="pub_py.py" 
+        name="py_pub" 
+        output="screen"
+        launch-prefix="gnome-terminal -- bash -c 'rosrun com_test pub_py.py; exec bash'"
+    />
+    <node 
+        pkg="com_test" 
+        type="sev_py.py" 
+        name="py_sev" 
+        output="screen"
+        launch-prefix="gnome-terminal -- bash -c 'rosrun com_test sev_py.py; exec bash'"
+    />
+</launch>

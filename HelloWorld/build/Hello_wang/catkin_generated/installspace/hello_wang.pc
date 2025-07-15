@@ -1,0 +1,8 @@
+prefix=/home/wang/ros_study/HelloWorld/install
+
+Name: hello_wang
+Description: Description of hello_wang
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

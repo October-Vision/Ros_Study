@@ -1,0 +1,8 @@
+prefix=/home/wang/ros_study/com_serv/devel
+
+Name: com_test
+Description: Description of com_test
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

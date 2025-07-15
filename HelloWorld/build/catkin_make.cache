@@ -1,0 +1,2 @@
+Hello_wang
+-DCATKIN_DEVEL_PREFIX=/home/wang/ros_study/HelloWorld/devel -DCMAKE_INSTALL_PREFIX=/home/wang/ros_study/HelloWorld/install -G Unix Makefiles

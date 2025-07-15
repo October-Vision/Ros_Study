@@ -1,0 +1,2 @@
+com_test
+-DCATKIN_DEVEL_PREFIX=/home/wang/ros_study/com_serv/devel -DCMAKE_INSTALL_PREFIX=/home/wang/ros_study/com_serv/install -G Unix Makefiles

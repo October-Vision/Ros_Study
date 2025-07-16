@@ -56,18 +56,6 @@ CMAKE_BINARY_DIR = /home/wang/ros_study/com_serv/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -100,6 +88,18 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # Special rule for the target test
 test:
@@ -166,6 +166,81 @@ preinstall/fast:
 depend:
 	cd /home/wang/ros_study/com_serv/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+# Convenience name for target.
+com_test/CMakeFiles/srv_curtle.dir/rule:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f CMakeFiles/Makefile2 com_test/CMakeFiles/srv_curtle.dir/rule
+.PHONY : com_test/CMakeFiles/srv_curtle.dir/rule
+
+# Convenience name for target.
+srv_curtle: com_test/CMakeFiles/srv_curtle.dir/rule
+
+.PHONY : srv_curtle
+
+# fast build rule for target.
+srv_curtle/fast:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/srv_curtle.dir/build.make com_test/CMakeFiles/srv_curtle.dir/build
+.PHONY : srv_curtle/fast
+
+# Convenience name for target.
+com_test/CMakeFiles/sub_pose.dir/rule:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f CMakeFiles/Makefile2 com_test/CMakeFiles/sub_pose.dir/rule
+.PHONY : com_test/CMakeFiles/sub_pose.dir/rule
+
+# Convenience name for target.
+sub_pose: com_test/CMakeFiles/sub_pose.dir/rule
+
+.PHONY : sub_pose
+
+# fast build rule for target.
+sub_pose/fast:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/sub_pose.dir/build.make com_test/CMakeFiles/sub_pose.dir/build
+.PHONY : sub_pose/fast
+
+# Convenience name for target.
+com_test/CMakeFiles/control_tur.dir/rule:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f CMakeFiles/Makefile2 com_test/CMakeFiles/control_tur.dir/rule
+.PHONY : com_test/CMakeFiles/control_tur.dir/rule
+
+# Convenience name for target.
+control_tur: com_test/CMakeFiles/control_tur.dir/rule
+
+.PHONY : control_tur
+
+# fast build rule for target.
+control_tur/fast:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/control_tur.dir/build.make com_test/CMakeFiles/control_tur.dir/build
+.PHONY : control_tur/fast
+
+# Convenience name for target.
+com_test/CMakeFiles/Param_delete.dir/rule:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f CMakeFiles/Makefile2 com_test/CMakeFiles/Param_delete.dir/rule
+.PHONY : com_test/CMakeFiles/Param_delete.dir/rule
+
+# Convenience name for target.
+Param_delete: com_test/CMakeFiles/Param_delete.dir/rule
+
+.PHONY : Param_delete
+
+# fast build rule for target.
+Param_delete/fast:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/Param_delete.dir/build.make com_test/CMakeFiles/Param_delete.dir/build
+.PHONY : Param_delete/fast
+
+# Convenience name for target.
+com_test/CMakeFiles/Param_search.dir/rule:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f CMakeFiles/Makefile2 com_test/CMakeFiles/Param_search.dir/rule
+.PHONY : com_test/CMakeFiles/Param_search.dir/rule
+
+# Convenience name for target.
+Param_search: com_test/CMakeFiles/Param_search.dir/rule
+
+.PHONY : Param_search
+
+# fast build rule for target.
+Param_search/fast:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/Param_search.dir/build.make com_test/CMakeFiles/Param_search.dir/build
+.PHONY : Param_search/fast
 
 # Convenience name for target.
 com_test/CMakeFiles/srv_client.dir/rule:
@@ -618,6 +693,21 @@ _com_test_generate_messages_check_deps_ADDsum/fast:
 .PHONY : _com_test_generate_messages_check_deps_ADDsum/fast
 
 # Convenience name for target.
+com_test/CMakeFiles/Param_update.dir/rule:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f CMakeFiles/Makefile2 com_test/CMakeFiles/Param_update.dir/rule
+.PHONY : com_test/CMakeFiles/Param_update.dir/rule
+
+# Convenience name for target.
+Param_update: com_test/CMakeFiles/Param_update.dir/rule
+
+.PHONY : Param_update
+
+# fast build rule for target.
+Param_update/fast:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/Param_update.dir/build.make com_test/CMakeFiles/Param_update.dir/build
+.PHONY : Param_update/fast
+
+# Convenience name for target.
 com_test/CMakeFiles/com_test_genlisp.dir/rule:
 	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f CMakeFiles/Makefile2 com_test/CMakeFiles/com_test_genlisp.dir/rule
 .PHONY : com_test/CMakeFiles/com_test_genlisp.dir/rule
@@ -677,6 +767,87 @@ com_test_generate_messages_py/fast:
 	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/com_test_generate_messages_py.dir/build.make com_test/CMakeFiles/com_test_generate_messages_py.dir/build
 .PHONY : com_test_generate_messages_py/fast
 
+src/Param_search.o: src/Param_search.cpp.o
+
+.PHONY : src/Param_search.o
+
+# target to build an object file
+src/Param_search.cpp.o:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/Param_search.dir/build.make com_test/CMakeFiles/Param_search.dir/src/Param_search.cpp.o
+.PHONY : src/Param_search.cpp.o
+
+src/Param_search.i: src/Param_search.cpp.i
+
+.PHONY : src/Param_search.i
+
+# target to preprocess a source file
+src/Param_search.cpp.i:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/Param_search.dir/build.make com_test/CMakeFiles/Param_search.dir/src/Param_search.cpp.i
+.PHONY : src/Param_search.cpp.i
+
+src/Param_search.s: src/Param_search.cpp.s
+
+.PHONY : src/Param_search.s
+
+# target to generate assembly for a file
+src/Param_search.cpp.s:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/Param_search.dir/build.make com_test/CMakeFiles/Param_search.dir/src/Param_search.cpp.s
+.PHONY : src/Param_search.cpp.s
+
+src/Param_update.o: src/Param_update.cpp.o
+
+.PHONY : src/Param_update.o
+
+# target to build an object file
+src/Param_update.cpp.o:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/Param_update.dir/build.make com_test/CMakeFiles/Param_update.dir/src/Param_update.cpp.o
+.PHONY : src/Param_update.cpp.o
+
+src/Param_update.i: src/Param_update.cpp.i
+
+.PHONY : src/Param_update.i
+
+# target to preprocess a source file
+src/Param_update.cpp.i:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/Param_update.dir/build.make com_test/CMakeFiles/Param_update.dir/src/Param_update.cpp.i
+.PHONY : src/Param_update.cpp.i
+
+src/Param_update.s: src/Param_update.cpp.s
+
+.PHONY : src/Param_update.s
+
+# target to generate assembly for a file
+src/Param_update.cpp.s:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/Param_update.dir/build.make com_test/CMakeFiles/Param_update.dir/src/Param_update.cpp.s
+.PHONY : src/Param_update.cpp.s
+
+src/control_show.o: src/control_show.cpp.o
+
+.PHONY : src/control_show.o
+
+# target to build an object file
+src/control_show.cpp.o:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/sub_pose.dir/build.make com_test/CMakeFiles/sub_pose.dir/src/control_show.cpp.o
+.PHONY : src/control_show.cpp.o
+
+src/control_show.i: src/control_show.cpp.i
+
+.PHONY : src/control_show.i
+
+# target to preprocess a source file
+src/control_show.cpp.i:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/sub_pose.dir/build.make com_test/CMakeFiles/sub_pose.dir/src/control_show.cpp.i
+.PHONY : src/control_show.cpp.i
+
+src/control_show.s: src/control_show.cpp.s
+
+.PHONY : src/control_show.s
+
+# target to generate assembly for a file
+src/control_show.cpp.s:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/sub_pose.dir/build.make com_test/CMakeFiles/sub_pose.dir/src/control_show.cpp.s
+.PHONY : src/control_show.cpp.s
+
 src/msg_pub.o: src/msg_pub.cpp.o
 
 .PHONY : src/msg_pub.o
@@ -730,6 +901,33 @@ src/msg_sev.s: src/msg_sev.cpp.s
 src/msg_sev.cpp.s:
 	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/msg_sev_test.dir/build.make com_test/CMakeFiles/msg_sev_test.dir/src/msg_sev.cpp.s
 .PHONY : src/msg_sev.cpp.s
+
+src/param_delete.o: src/param_delete.cpp.o
+
+.PHONY : src/param_delete.o
+
+# target to build an object file
+src/param_delete.cpp.o:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/Param_delete.dir/build.make com_test/CMakeFiles/Param_delete.dir/src/param_delete.cpp.o
+.PHONY : src/param_delete.cpp.o
+
+src/param_delete.i: src/param_delete.cpp.i
+
+.PHONY : src/param_delete.i
+
+# target to preprocess a source file
+src/param_delete.cpp.i:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/Param_delete.dir/build.make com_test/CMakeFiles/Param_delete.dir/src/param_delete.cpp.i
+.PHONY : src/param_delete.cpp.i
+
+src/param_delete.s: src/param_delete.cpp.s
+
+.PHONY : src/param_delete.s
+
+# target to generate assembly for a file
+src/param_delete.cpp.s:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/Param_delete.dir/build.make com_test/CMakeFiles/Param_delete.dir/src/param_delete.cpp.s
+.PHONY : src/param_delete.cpp.s
 
 src/srv_msg_client.o: src/srv_msg_client.cpp.o
 
@@ -785,6 +983,33 @@ src/srv_msg_server.cpp.s:
 	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/srv_server.dir/build.make com_test/CMakeFiles/srv_server.dir/src/srv_msg_server.cpp.s
 .PHONY : src/srv_msg_server.cpp.s
 
+src/srv_tur_ser.o: src/srv_tur_ser.cpp.o
+
+.PHONY : src/srv_tur_ser.o
+
+# target to build an object file
+src/srv_tur_ser.cpp.o:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/srv_curtle.dir/build.make com_test/CMakeFiles/srv_curtle.dir/src/srv_tur_ser.cpp.o
+.PHONY : src/srv_tur_ser.cpp.o
+
+src/srv_tur_ser.i: src/srv_tur_ser.cpp.i
+
+.PHONY : src/srv_tur_ser.i
+
+# target to preprocess a source file
+src/srv_tur_ser.cpp.i:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/srv_curtle.dir/build.make com_test/CMakeFiles/srv_curtle.dir/src/srv_tur_ser.cpp.i
+.PHONY : src/srv_tur_ser.cpp.i
+
+src/srv_tur_ser.s: src/srv_tur_ser.cpp.s
+
+.PHONY : src/srv_tur_ser.s
+
+# target to generate assembly for a file
+src/srv_tur_ser.cpp.s:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/srv_curtle.dir/build.make com_test/CMakeFiles/srv_curtle.dir/src/srv_tur_ser.cpp.s
+.PHONY : src/srv_tur_ser.cpp.s
+
 src/test_pub.o: src/test_pub.cpp.o
 
 .PHONY : src/test_pub.o
@@ -839,16 +1064,48 @@ src/test_sev.cpp.s:
 	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/sev_test.dir/build.make com_test/CMakeFiles/sev_test.dir/src/test_sev.cpp.s
 .PHONY : src/test_sev.cpp.s
 
+src/turtlesim_control.o: src/turtlesim_control.cpp.o
+
+.PHONY : src/turtlesim_control.o
+
+# target to build an object file
+src/turtlesim_control.cpp.o:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/control_tur.dir/build.make com_test/CMakeFiles/control_tur.dir/src/turtlesim_control.cpp.o
+.PHONY : src/turtlesim_control.cpp.o
+
+src/turtlesim_control.i: src/turtlesim_control.cpp.i
+
+.PHONY : src/turtlesim_control.i
+
+# target to preprocess a source file
+src/turtlesim_control.cpp.i:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/control_tur.dir/build.make com_test/CMakeFiles/control_tur.dir/src/turtlesim_control.cpp.i
+.PHONY : src/turtlesim_control.cpp.i
+
+src/turtlesim_control.s: src/turtlesim_control.cpp.s
+
+.PHONY : src/turtlesim_control.s
+
+# target to generate assembly for a file
+src/turtlesim_control.cpp.s:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/control_tur.dir/build.make com_test/CMakeFiles/control_tur.dir/src/turtlesim_control.cpp.s
+.PHONY : src/turtlesim_control.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/strip"
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... edit_cache"
+	@echo "... install/strip"
+	@echo "... srv_curtle"
+	@echo "... sub_pose"
+	@echo "... control_tur"
+	@echo "... Param_delete"
+	@echo "... Param_search"
 	@echo "... srv_client"
 	@echo "... msg_sev_test"
 	@echo "... sev_test"
@@ -882,28 +1139,47 @@ help:
 	@echo "... msg_pub_test"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... _com_test_generate_messages_check_deps_ADDsum"
+	@echo "... Param_update"
 	@echo "... com_test_genlisp"
 	@echo "... com_test_generate_messages_nodejs"
 	@echo "... com_test_gennodejs"
 	@echo "... com_test_generate_messages_py"
+	@echo "... src/Param_search.o"
+	@echo "... src/Param_search.i"
+	@echo "... src/Param_search.s"
+	@echo "... src/Param_update.o"
+	@echo "... src/Param_update.i"
+	@echo "... src/Param_update.s"
+	@echo "... src/control_show.o"
+	@echo "... src/control_show.i"
+	@echo "... src/control_show.s"
 	@echo "... src/msg_pub.o"
 	@echo "... src/msg_pub.i"
 	@echo "... src/msg_pub.s"
 	@echo "... src/msg_sev.o"
 	@echo "... src/msg_sev.i"
 	@echo "... src/msg_sev.s"
+	@echo "... src/param_delete.o"
+	@echo "... src/param_delete.i"
+	@echo "... src/param_delete.s"
 	@echo "... src/srv_msg_client.o"
 	@echo "... src/srv_msg_client.i"
 	@echo "... src/srv_msg_client.s"
 	@echo "... src/srv_msg_server.o"
 	@echo "... src/srv_msg_server.i"
 	@echo "... src/srv_msg_server.s"
+	@echo "... src/srv_tur_ser.o"
+	@echo "... src/srv_tur_ser.i"
+	@echo "... src/srv_tur_ser.s"
 	@echo "... src/test_pub.o"
 	@echo "... src/test_pub.i"
 	@echo "... src/test_pub.s"
 	@echo "... src/test_sev.o"
 	@echo "... src/test_sev.i"
 	@echo "... src/test_sev.s"
+	@echo "... src/turtlesim_control.o"
+	@echo "... src/turtlesim_control.i"
+	@echo "... src/turtlesim_control.s"
 .PHONY : help
 
 

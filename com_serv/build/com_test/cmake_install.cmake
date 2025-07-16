@@ -116,3 +116,27 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/com_test" TYPE PROGRAM FILES "/home/wang/ros_study/com_serv/build/com_test/catkin_generated/installspace/srv_server.py")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/com_test" TYPE PROGRAM FILES "/home/wang/ros_study/com_serv/build/com_test/catkin_generated/installspace/param_update.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/com_test" TYPE PROGRAM FILES "/home/wang/ros_study/com_serv/build/com_test/catkin_generated/installspace/param_search.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/com_test" TYPE PROGRAM FILES "/home/wang/ros_study/com_serv/build/com_test/catkin_generated/installspace/param_detele.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/com_test" TYPE PROGRAM FILES "/home/wang/ros_study/com_serv/build/com_test/catkin_generated/installspace/control_tur.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/com_test" TYPE PROGRAM FILES "/home/wang/ros_study/com_serv/build/com_test/catkin_generated/installspace/sub_pose.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/com_test" TYPE PROGRAM FILES "/home/wang/ros_study/com_serv/build/com_test/catkin_generated/installspace/srv_tur_ser.py")
+endif()
+

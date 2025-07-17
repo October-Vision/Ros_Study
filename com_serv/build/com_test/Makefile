@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+com_test/CMakeFiles/change_bk.dir/rule:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f CMakeFiles/Makefile2 com_test/CMakeFiles/change_bk.dir/rule
+.PHONY : com_test/CMakeFiles/change_bk.dir/rule
+
+# Convenience name for target.
+change_bk: com_test/CMakeFiles/change_bk.dir/rule
+
+.PHONY : change_bk
+
+# fast build rule for target.
+change_bk/fast:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/change_bk.dir/build.make com_test/CMakeFiles/change_bk.dir/build
+.PHONY : change_bk/fast
+
+# Convenience name for target.
 com_test/CMakeFiles/srv_curtle.dir/rule:
 	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f CMakeFiles/Makefile2 com_test/CMakeFiles/srv_curtle.dir/rule
 .PHONY : com_test/CMakeFiles/srv_curtle.dir/rule
@@ -196,6 +211,21 @@ sub_pose: com_test/CMakeFiles/sub_pose.dir/rule
 sub_pose/fast:
 	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/sub_pose.dir/build.make com_test/CMakeFiles/sub_pose.dir/build
 .PHONY : sub_pose/fast
+
+# Convenience name for target.
+com_test/CMakeFiles/hello.dir/rule:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f CMakeFiles/Makefile2 com_test/CMakeFiles/hello.dir/rule
+.PHONY : com_test/CMakeFiles/hello.dir/rule
+
+# Convenience name for target.
+hello: com_test/CMakeFiles/hello.dir/rule
+
+.PHONY : hello
+
+# fast build rule for target.
+hello/fast:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/hello.dir/build.make com_test/CMakeFiles/hello.dir/build
+.PHONY : hello/fast
 
 # Convenience name for target.
 com_test/CMakeFiles/control_tur.dir/rule:
@@ -528,6 +558,21 @@ rosgraph_msgs_generate_messages_nodejs/fast:
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
+com_test/CMakeFiles/use_head.dir/rule:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f CMakeFiles/Makefile2 com_test/CMakeFiles/use_head.dir/rule
+.PHONY : com_test/CMakeFiles/use_head.dir/rule
+
+# Convenience name for target.
+use_head: com_test/CMakeFiles/use_head.dir/rule
+
+.PHONY : use_head
+
+# fast build rule for target.
+use_head/fast:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/use_head.dir/build.make com_test/CMakeFiles/use_head.dir/build
+.PHONY : use_head/fast
+
+# Convenience name for target.
 com_test/CMakeFiles/com_test_generate_messages_cpp.dir/rule:
 	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f CMakeFiles/Makefile2 com_test/CMakeFiles/com_test_generate_messages_cpp.dir/rule
 .PHONY : com_test/CMakeFiles/com_test_generate_messages_cpp.dir/rule
@@ -556,6 +601,21 @@ roscpp_generate_messages_eus: com_test/CMakeFiles/roscpp_generate_messages_eus.d
 roscpp_generate_messages_eus/fast:
 	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/roscpp_generate_messages_eus.dir/build.make com_test/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
+
+# Convenience name for target.
+com_test/CMakeFiles/head.dir/rule:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f CMakeFiles/Makefile2 com_test/CMakeFiles/head.dir/rule
+.PHONY : com_test/CMakeFiles/head.dir/rule
+
+# Convenience name for target.
+head: com_test/CMakeFiles/head.dir/rule
+
+.PHONY : head
+
+# fast build rule for target.
+head/fast:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/head.dir/build.make com_test/CMakeFiles/head.dir/build
+.PHONY : head/fast
 
 # Convenience name for target.
 com_test/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
@@ -618,21 +678,6 @@ com_test_generate_messages/fast:
 .PHONY : com_test_generate_messages/fast
 
 # Convenience name for target.
-com_test/CMakeFiles/com_test_generate_messages_eus.dir/rule:
-	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f CMakeFiles/Makefile2 com_test/CMakeFiles/com_test_generate_messages_eus.dir/rule
-.PHONY : com_test/CMakeFiles/com_test_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-com_test_generate_messages_eus: com_test/CMakeFiles/com_test_generate_messages_eus.dir/rule
-
-.PHONY : com_test_generate_messages_eus
-
-# fast build rule for target.
-com_test_generate_messages_eus/fast:
-	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/com_test_generate_messages_eus.dir/build.make com_test/CMakeFiles/com_test_generate_messages_eus.dir/build
-.PHONY : com_test_generate_messages_eus/fast
-
-# Convenience name for target.
 com_test/CMakeFiles/pub_test.dir/rule:
 	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f CMakeFiles/Makefile2 com_test/CMakeFiles/pub_test.dir/rule
 .PHONY : com_test/CMakeFiles/pub_test.dir/rule
@@ -646,6 +691,21 @@ pub_test: com_test/CMakeFiles/pub_test.dir/rule
 pub_test/fast:
 	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/pub_test.dir/build.make com_test/CMakeFiles/pub_test.dir/build
 .PHONY : pub_test/fast
+
+# Convenience name for target.
+com_test/CMakeFiles/com_test_generate_messages_eus.dir/rule:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f CMakeFiles/Makefile2 com_test/CMakeFiles/com_test_generate_messages_eus.dir/rule
+.PHONY : com_test/CMakeFiles/com_test_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+com_test_generate_messages_eus: com_test/CMakeFiles/com_test_generate_messages_eus.dir/rule
+
+.PHONY : com_test_generate_messages_eus
+
+# fast build rule for target.
+com_test_generate_messages_eus/fast:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/com_test_generate_messages_eus.dir/build.make com_test/CMakeFiles/com_test_generate_messages_eus.dir/build
+.PHONY : com_test_generate_messages_eus/fast
 
 # Convenience name for target.
 com_test/CMakeFiles/msg_pub_test.dir/rule:
@@ -821,6 +881,33 @@ src/Param_update.cpp.s:
 	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/Param_update.dir/build.make com_test/CMakeFiles/Param_update.dir/src/Param_update.cpp.s
 .PHONY : src/Param_update.cpp.s
 
+src/change_background.o: src/change_background.cpp.o
+
+.PHONY : src/change_background.o
+
+# target to build an object file
+src/change_background.cpp.o:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/change_bk.dir/build.make com_test/CMakeFiles/change_bk.dir/src/change_background.cpp.o
+.PHONY : src/change_background.cpp.o
+
+src/change_background.i: src/change_background.cpp.i
+
+.PHONY : src/change_background.i
+
+# target to preprocess a source file
+src/change_background.cpp.i:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/change_bk.dir/build.make com_test/CMakeFiles/change_bk.dir/src/change_background.cpp.i
+.PHONY : src/change_background.cpp.i
+
+src/change_background.s: src/change_background.cpp.s
+
+.PHONY : src/change_background.s
+
+# target to generate assembly for a file
+src/change_background.cpp.s:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/change_bk.dir/build.make com_test/CMakeFiles/change_bk.dir/src/change_background.cpp.s
+.PHONY : src/change_background.cpp.s
+
 src/control_show.o: src/control_show.cpp.o
 
 .PHONY : src/control_show.o
@@ -847,6 +934,60 @@ src/control_show.s: src/control_show.cpp.s
 src/control_show.cpp.s:
 	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/sub_pose.dir/build.make com_test/CMakeFiles/sub_pose.dir/src/control_show.cpp.s
 .PHONY : src/control_show.cpp.s
+
+src/haha.o: src/haha.cpp.o
+
+.PHONY : src/haha.o
+
+# target to build an object file
+src/haha.cpp.o:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/head.dir/build.make com_test/CMakeFiles/head.dir/src/haha.cpp.o
+.PHONY : src/haha.cpp.o
+
+src/haha.i: src/haha.cpp.i
+
+.PHONY : src/haha.i
+
+# target to preprocess a source file
+src/haha.cpp.i:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/head.dir/build.make com_test/CMakeFiles/head.dir/src/haha.cpp.i
+.PHONY : src/haha.cpp.i
+
+src/haha.s: src/haha.cpp.s
+
+.PHONY : src/haha.s
+
+# target to generate assembly for a file
+src/haha.cpp.s:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/head.dir/build.make com_test/CMakeFiles/head.dir/src/haha.cpp.s
+.PHONY : src/haha.cpp.s
+
+src/hello.o: src/hello.cpp.o
+
+.PHONY : src/hello.o
+
+# target to build an object file
+src/hello.cpp.o:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/hello.dir/build.make com_test/CMakeFiles/hello.dir/src/hello.cpp.o
+.PHONY : src/hello.cpp.o
+
+src/hello.i: src/hello.cpp.i
+
+.PHONY : src/hello.i
+
+# target to preprocess a source file
+src/hello.cpp.i:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/hello.dir/build.make com_test/CMakeFiles/hello.dir/src/hello.cpp.i
+.PHONY : src/hello.cpp.i
+
+src/hello.s: src/hello.cpp.s
+
+.PHONY : src/hello.s
+
+# target to generate assembly for a file
+src/hello.cpp.s:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/hello.dir/build.make com_test/CMakeFiles/hello.dir/src/hello.cpp.s
+.PHONY : src/hello.cpp.s
 
 src/msg_pub.o: src/msg_pub.cpp.o
 
@@ -1091,6 +1232,33 @@ src/turtlesim_control.cpp.s:
 	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/control_tur.dir/build.make com_test/CMakeFiles/control_tur.dir/src/turtlesim_control.cpp.s
 .PHONY : src/turtlesim_control.cpp.s
 
+src/use_haha.o: src/use_haha.cpp.o
+
+.PHONY : src/use_haha.o
+
+# target to build an object file
+src/use_haha.cpp.o:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/use_head.dir/build.make com_test/CMakeFiles/use_head.dir/src/use_haha.cpp.o
+.PHONY : src/use_haha.cpp.o
+
+src/use_haha.i: src/use_haha.cpp.i
+
+.PHONY : src/use_haha.i
+
+# target to preprocess a source file
+src/use_haha.cpp.i:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/use_head.dir/build.make com_test/CMakeFiles/use_head.dir/src/use_haha.cpp.i
+.PHONY : src/use_haha.cpp.i
+
+src/use_haha.s: src/use_haha.cpp.s
+
+.PHONY : src/use_haha.s
+
+# target to generate assembly for a file
+src/use_haha.cpp.s:
+	cd /home/wang/ros_study/com_serv/build && $(MAKE) -f com_test/CMakeFiles/use_head.dir/build.make com_test/CMakeFiles/use_head.dir/src/use_haha.cpp.s
+.PHONY : src/use_haha.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1100,9 +1268,11 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... edit_cache"
+	@echo "... change_bk"
 	@echo "... install/strip"
 	@echo "... srv_curtle"
 	@echo "... sub_pose"
+	@echo "... hello"
 	@echo "... control_tur"
 	@echo "... Param_delete"
 	@echo "... Param_search"
@@ -1127,15 +1297,17 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... com_test_gencpp"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
+	@echo "... use_head"
 	@echo "... com_test_generate_messages_cpp"
 	@echo "... rebuild_cache"
 	@echo "... roscpp_generate_messages_eus"
+	@echo "... head"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... com_test_generate_messages"
-	@echo "... com_test_generate_messages_eus"
 	@echo "... pub_test"
+	@echo "... com_test_generate_messages_eus"
 	@echo "... msg_pub_test"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... _com_test_generate_messages_check_deps_ADDsum"
@@ -1150,9 +1322,18 @@ help:
 	@echo "... src/Param_update.o"
 	@echo "... src/Param_update.i"
 	@echo "... src/Param_update.s"
+	@echo "... src/change_background.o"
+	@echo "... src/change_background.i"
+	@echo "... src/change_background.s"
 	@echo "... src/control_show.o"
 	@echo "... src/control_show.i"
 	@echo "... src/control_show.s"
+	@echo "... src/haha.o"
+	@echo "... src/haha.i"
+	@echo "... src/haha.s"
+	@echo "... src/hello.o"
+	@echo "... src/hello.i"
+	@echo "... src/hello.s"
 	@echo "... src/msg_pub.o"
 	@echo "... src/msg_pub.i"
 	@echo "... src/msg_pub.s"
@@ -1180,6 +1361,9 @@ help:
 	@echo "... src/turtlesim_control.o"
 	@echo "... src/turtlesim_control.i"
 	@echo "... src/turtlesim_control.s"
+	@echo "... src/use_haha.o"
+	@echo "... src/use_haha.i"
+	@echo "... src/use_haha.s"
 .PHONY : help
 
 

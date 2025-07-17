@@ -1,0 +1,12 @@
+<launch>
+    <node 
+    pkg="tf_stu" 
+    type="dynamic_tf_pub" 
+    name="dynamic_tf_pub" 
+    output="screen"/>
+    <node 
+    pkg="tf_stu" 
+    type="dynamic_tf_sub" 
+    name="dynamic_tf_sub" 
+    output="screen"/>
+</launch>

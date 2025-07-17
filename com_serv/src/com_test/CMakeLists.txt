@@ -24,10 +24,13 @@ generate_messages(
 )
 
 include_directories(
-# include
+  include
   ${catkin_INCLUDE_DIRS}
 )
-
+add_library(head
+  include/com_test/haha.h
+  src/haha.cpp
+)
 catkin_package(
 #  INCLUDE_DIRS include
   CATKIN_DEPENDS 
@@ -49,6 +52,7 @@ catkin_install_python(PROGRAMS
   script/control_tur.py
   script/sub_pose.py
   script/srv_tur_ser.py
+  script/change_background.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
@@ -65,11 +69,17 @@ add_executable(Param_delete src/param_delete.cpp)
 add_executable(control_tur src/turtlesim_control.cpp)
 add_executable(sub_pose src/control_show.cpp)
 add_executable(srv_curtle src/srv_tur_ser.cpp)
+add_executable(change_bk src/change_background.cpp)
+add_executable(hello src/hello.cpp)
+add_executable(use_head src/use_haha.cpp)
 
 add_dependencies(msg_pub_test ${PROJECT_NAME}_generate_messages_cpp)
 add_dependencies(msg_sev_test ${PROJECT_NAME}_generate_messages_cpp)
 add_dependencies(srv_server ${PROJECT_NAME}_generate_messages_cpp)
 add_dependencies(srv_client ${PROJECT_NAME}_generate_messages_cpp)
+add_dependencies(hello ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(head ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(use_head ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 target_link_libraries(pub_test  ${catkin_LIBRARIES})
 target_link_libraries(sev_test ${catkin_LIBRARIES})
@@ -83,3 +93,7 @@ target_link_libraries(Param_delete ${catkin_LIBRARIES})
 target_link_libraries(control_tur ${catkin_LIBRARIES})
 target_link_libraries(sub_pose ${catkin_LIBRARIES})
 target_link_libraries(srv_curtle ${catkin_LIBRARIES})
+target_link_libraries(change_bk ${catkin_LIBRARIES})
+target_link_libraries(hello ${catkin_LIBRARIES})
+target_link_libraries(head ${catkin_LIBRARIES})
+target_link_libraries(use_head head ${catkin_LIBRARIES})

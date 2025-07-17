@@ -1,0 +1,2 @@
+pack_test
+-DCATKIN_DEVEL_PREFIX=/home/wang/ros_study/ros_pack/devel -DCMAKE_INSTALL_PREFIX=/home/wang/ros_study/ros_pack/install -G Unix Makefiles

@@ -1,0 +1,12 @@
+<launch>
+    <node 
+    pkg="tf_stu" 
+    type="tf_stu_node" 
+    name="stu_node" 
+    output="screen"/>
+    <node 
+    pkg="tf_stu" 
+    type="tf_pub_node" 
+    name="pub_node" 
+    output="screen"/>
+</launch>

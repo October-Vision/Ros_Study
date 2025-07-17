@@ -1,0 +1,8 @@
+prefix=/home/wang/ros_study/ros_pack/devel
+
+Name: pack_test
+Description: Description of pack_test
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

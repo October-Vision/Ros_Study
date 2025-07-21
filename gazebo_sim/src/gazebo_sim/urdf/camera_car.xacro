@@ -1,0 +1,42 @@
+<robot name="my_sensors" xmlns:xacro="http://wiki.ros.org/xacro">
+  <!-- 被引用的link -->
+    <gazebo reference="camera">
+    <!-- 类型设置为 camara -->
+    <sensor type="camera" name="camera_node">
+        <updateRate>30.0</updateRate><!-- 更新频率 -->
+        <!-- 摄像头基本信息设置 -->
+        <camara name="head">
+            <horizontal_fov>1.3962634</horizontal_fov><!-- 水平视场角 -->
+            <image>
+                <width>640</width><!-- 图像宽度 -->
+                <height>480</height><!-- 图像高度 -->
+                <format>R8G8B8</format><!-- 图像格式 -->
+            </image>
+            <clip>
+                <near>0.02</near><!-- 最近可见距离 -->
+                <far>300.0</far><!-- 最远可见距离 -->
+            </clip>
+            <noise>
+                <type>gaussian</type><!-- 噪声类型 -->
+                <mean>0.0</mean><!-- 噪声均值 -->
+                <stddev>0.007</stddev><!-- 噪声标准差 -->
+            </noise>
+        </camara>
+        <!-- 插件设置 -->
+        <plugin name="gazebo_camera" filename="libgazebo_ros_camera.so">
+            <alwaysOn>true</alwaysOn><!-- 是否始终开启 -->
+            <updateRate>0</updateRate><!-- 插件更新频率 -->
+            <cameraName>/camera</cameraName><!-- 摄像头名称 -->
+            <imageTopicName>image_raw</imageTopicName><!-- 图像话题名称 -->
+            <cameraInfoTopicName>camera_info</cameraInfoTopicName><!-- 摄像头信息话题名称 -->
+            <frameName>camera</frameName><!-- 坐标系名称 -->
+            <hackBaseline>0.07</hackBaseline><!-- 基线长度 -->
+            <distortionK1>0.0</distortionK1><!-- 畸变系数 K1 -->
+            <distortionK2>0.0</distortionK2><!-- 畸变系数 K2 -->
+            <distortionK3>0.0</distortionK3><!-- 畸变系数 K3 -->
+            <distortionT1>0.0</distortionT1><!-- 畸变系数 T1 -->
+            <distortionT2>0.0</distortionT2><!-- 畸变系数 T2-->
+        </plugin>
+       </sensor>
+    </gazebo> 
+</robot>

@@ -1,0 +1,6 @@
+<launch >
+    <!--set map config-->
+    <arg name="map" default="nav.yaml" />
+    <!--run map server-->
+    <node name="map_server" pkg="map_server" type="map_server"  args=" $(find slam_sim)/map/$(arg map)" />
+</launch>

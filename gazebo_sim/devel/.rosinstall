@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/wang/ros_study/gazebo_sim/devel/setup.sh

@@ -1,0 +1,8 @@
+prefix=/home/wang/ros_study/sim_robot/install
+
+Name: robot_sim
+Description: Description of robot_sim
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

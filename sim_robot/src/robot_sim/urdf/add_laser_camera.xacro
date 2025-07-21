@@ -1,0 +1,5 @@
+<robot name="my_car_camera" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:include filename="cir_robot.xacro" />
+    <xacro:include filename="camera.xacro" />
+    <xacro:include filename="larder.xacro" />
+</robot>

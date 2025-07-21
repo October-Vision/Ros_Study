@@ -1,0 +1,2 @@
+robot_sim
+-DCATKIN_DEVEL_PREFIX=/home/wang/ros_study/sim_robot/devel -DCMAKE_INSTALL_PREFIX=/home/wang/ros_study/sim_robot/install -G Unix Makefiles

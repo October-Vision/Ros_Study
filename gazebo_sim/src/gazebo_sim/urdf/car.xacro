@@ -1,0 +1,10 @@
+<robot name="my_car_camera" xmlns:xacro="http://wiki.ros.org/xacro">
+    <xacro:include filename="$(find gazebo_sim)/urdf/inertial_set.xacro" />
+    <xacro:include filename="$(find gazebo_sim)/urdf/my_car.xacro"/>
+    <xacro:include filename="$(find gazebo_sim)/urdf/camera.xacro" />
+    <xacro:include filename="$(find gazebo_sim)/urdf/laser.xacro" />
+    <xacro:include filename="$(find gazebo_sim)/urdf/control_car.xacro" />
+    <xacro:include filename="$(find gazebo_sim)/urdf/laser_car.xacro" />
+    <!-- <xacro:include filename="$(find gazebo_sim)/urdf/camera_car.xacro" /> -->
+    <xacro:include filename="$(find gazebo_sim)/urdf/dep_camera.xacro" />
+</robot>

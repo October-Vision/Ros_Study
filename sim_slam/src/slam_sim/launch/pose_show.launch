@@ -1,0 +1,10 @@
+<launch>
+    <arg name="map" default="nav.yaml" />
+    <!--run map server-->
+    <node name="map_server" pkg="map_server" type="map_server" args=" $(find slam_sim)/map/$(arg map)" />
+    <!--set map config-->
+    <!--run amclnode-->
+    <include file="$(find slam_sim)/launch/pose_car.launch" />
+    <!--run rviz-->
+    <node pkg="rviz" type="rviz" name="rviz"/>
+</launch>

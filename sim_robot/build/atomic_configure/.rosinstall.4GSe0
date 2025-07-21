@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/wang/ros_study/sim_robot/devel/setup.sh

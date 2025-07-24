@@ -1,5 +1,5 @@
 <launch>
-
+    <param name="/use_sim_time" value="true" />
     <!-- 将 Urdf 文件的内容加载到参数服务器 -->
     <param name="robot_description" command="$(find xacro)/xacro $(find slam_sim)/urdf/car.xacro" />
     
@@ -8,6 +8,9 @@
     <!-- 启动 gazebo -->
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
         <arg name="world_name" value="$(find slam_sim)/world/wang_building.world" />
+        <arg name="paused" value="false" />
+        <arg name="use_sim_time" value="true" />
+        <arg name="gui" value="true" />
     </include>
 
 

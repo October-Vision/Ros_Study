@@ -4,5 +4,6 @@
     <!--run slam node-->
     <include file="$(find slam_sim)/launch/crt_map.launch" />
 
+
     <node pkg="rviz" type="rviz" name="rviz" args="-d $(find slam_sim)/config/nav.rviz" />
 </launch>
